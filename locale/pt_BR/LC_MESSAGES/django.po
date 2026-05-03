@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-03 13:52+0000\n"
+"POT-Creation-Date: 2026-05-03 21:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,31 +137,31 @@ msgid ""
 "practical finance."
 msgstr ""
 "Uma simulação bancária que explora os internos avançados do Python — "
-"metaclasses, __slots__ e protocolos de descritores usados para aplicar regras "
-"de negócio ao nível de classe. Mais sobre a compreensão profunda da "
+"metaclasses, __slots__ e protocolos de descritores usados para aplicar "
+"regras de negócio ao nível de classe. Mais sobre a compreensão profunda da "
 "linguagem do que finanças práticas."
 
-#: templates/base.html:26 templates/core/about.html:11
+#: templates/base.html:33 templates/core/about.html:11
 msgid "About"
 msgstr "Sobre"
 
-#: templates/base.html:28
+#: templates/base.html:36
 msgid "Projects"
 msgstr "Projetos"
 
-#: templates/base.html:30
+#: templates/base.html:38
 msgid "Contact"
 msgstr "Contato"
 
-#: templates/base.html:50
+#: templates/base.html:62
 msgid "Hire me"
 msgstr "Contrate-me"
 
-#: templates/base.html:58
+#: templates/base.html:71
 msgid "Built with purpose"
 msgstr "Feito com propósito"
 
-#: templates/base.html:59
+#: templates/base.html:72
 msgid "São Paulo, BR · Available for hire"
 msgstr "São Paulo, BR · Disponível para contratação"
 
@@ -207,15 +207,16 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                Eu construo aplicações web full-stack que resolvem problemas reais "
-"—\n"
-"                desde <strong>produtos SaaS</strong> com pagamentos e autenticação "
-"até\n"
-"                <strong>ferramentas integradas com IA</strong> que ajudam as pessoas "
-"a tomar decisões\n"
-"                financeiras mais inteligentes. Eu me importo profundamente em "
-"<em>fazer as coisas direito</em>:\n"
-"                arquitetura limpa, código legível e sistemas que realmente funcionam sob pressão.\n"
+"                Eu construo aplicações web full-stack que resolvem problemas "
+"reais —\n"
+"                desde <strong>produtos SaaS</strong> com pagamentos e "
+"autenticação até\n"
+"                <strong>ferramentas integradas com IA</strong> que ajudam as "
+"pessoas a tomar decisões\n"
+"                financeiras mais inteligentes. Eu me importo profundamente "
+"em <em>fazer as coisas direito</em>:\n"
+"                arquitetura limpa, código legível e sistemas que realmente "
+"funcionam sob pressão.\n"
 "                "
 
 #: templates/core/about.html:35
@@ -234,12 +235,13 @@ msgid ""
 msgstr ""
 "\n"
 "                Um dos meus desafios pessoais foi construir um\n"
-"                <strong>scanner de diretórios estilo DIRB</strong> em Python puro "
-"—\n"
+"                <strong>scanner de diretórios estilo DIRB</strong> em Python "
+"puro —\n"
 "                zero dependências externas, handlers HTTP escritos do zero\n"
 "                seguindo a especificação. Não porque fosse eficiente, mas "
 "porque\n"
-"                <em>entender os fundamentos</em> importa mais para mim do que atalhos.\n"
+"                <em>entender os fundamentos</em> importa mais para mim do "
+"que atalhos.\n"
 "                "
 
 #: templates/core/about.html:44
@@ -252,9 +254,10 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                Quando não estou programando, provavelmente estou lendo sobre sistemas "
-"distribuídos,\n"
-"                levantando peso ou navegando na vida em dois idiomas simultaneamente.\n"
+"                Quando não estou programando, provavelmente estou lendo "
+"sobre sistemas distribuídos,\n"
+"                levantando peso ou navegando na vida em dois idiomas "
+"simultaneamente.\n"
 "                "
 
 #: templates/core/about.html:54
@@ -291,9 +294,10 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                Estou procurando oportunidades de estágio e desenvolvedor júnior "
-"—\n"
-"                remoto ou em São Paulo. Eu trabalho rápido, me comunico claramente\n"
+"                Estou procurando oportunidades de estágio e desenvolvedor "
+"júnior —\n"
+"                remoto ou em São Paulo. Eu trabalho rápido, me comunico "
+"claramente\n"
 "                e trago curiosidade genuína para tudo o que construo.\n"
 "                "
 
@@ -312,11 +316,12 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                    Aberto a estágios e posições de desenvolvedor júnior começando "
-"imediatamente.\n"
-"                    Disponível para arranjos em tempo integral ou meio período.\n"
-"                    <small>Preferência: remoto ou São Paulo, SP · Aberto a realocação "
-"para a vaga certa</small>\n"
+"                    Aberto a estágios e posições de desenvolvedor júnior "
+"começando imediatamente.\n"
+"                    Disponível para arranjos em tempo integral ou meio "
+"período.\n"
+"                    <small>Preferência: remoto ou São Paulo, SP · Aberto a "
+"realocação para a vaga certa</small>\n"
 "                    "
 
 #: templates/core/contact.html:75
@@ -336,8 +341,8 @@ msgid "Debrecen, Hungary · Currently enrolled"
 msgstr "Debrecen, Hungria · Atualmente matriculado"
 
 #: templates/core/index.html:13
-msgid "Available for internships & junior roles"
-msgstr "Disponível para estágios e vagas júnior"
+msgid "Available for new roles"
+msgstr "Disponível para novas oportunidades"
 
 #: templates/core/index.html:21
 msgid ""
@@ -351,9 +356,12 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            Desenvolvedor de software baseado em <strong>São Paulo, BR</strong> —\n"
-"            construindo aplicações web full-stack com <strong>Python</strong>,\n"
-"            <strong>Java</strong> e paixão por escrever código limpo e com propósito.\n"
+"            Desenvolvedor de software baseado em <strong>São Paulo, BR</"
+"strong> —\n"
+"            construindo aplicações web full-stack com <strong>Python</"
+"strong>,\n"
+"            <strong>Java</strong> e paixão por escrever código limpo e com "
+"propósito.\n"
 "            <em>Bilíngue. Multicultural. Obsessivo por técnica.</em>\n"
 "            "
 
@@ -366,8 +374,8 @@ msgid "Current status"
 msgstr "Status atual"
 
 #: templates/core/index.html:39
-msgid "Actively seeking software internship or junior developer role"
-msgstr "Buscando ativamente estágio em software ou cargo de desenvolvedor júnior"
+msgid "Actively seeking new opportunities in the software industry"
+msgstr "Ativamente buscando novas oportunidades na indústria de software"
 
 #: templates/core/index.html:40
 msgid "Remote-friendly · São Paulo · Open to relocation"
@@ -1655,3 +1663,7 @@ msgstr ""
 #: venv/lib/python3.14/site-packages/django/views/templates/default_urlconf.html:236
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "Actively seeking software internship or junior developer role"
+#~ msgstr ""
+#~ "Buscando ativamente estágio em software ou cargo de desenvolvedor júnior"

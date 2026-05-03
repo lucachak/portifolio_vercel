@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-03 13:52+0000\n"
+"POT-Creation-Date: 2026-05-03 21:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,27 +119,27 @@ msgid ""
 "practical finance."
 msgstr ""
 
-#: templates/base.html:26 templates/core/about.html:11
+#: templates/base.html:33 templates/core/about.html:11
 msgid "About"
 msgstr ""
 
-#: templates/base.html:28
+#: templates/base.html:36
 msgid "Projects"
 msgstr ""
 
-#: templates/base.html:30
+#: templates/base.html:38
 msgid "Contact"
 msgstr ""
 
-#: templates/base.html:50
+#: templates/base.html:62
 msgid "Hire me"
 msgstr ""
 
-#: templates/base.html:58
+#: templates/base.html:71
 msgid "Built with purpose"
 msgstr ""
 
-#: templates/base.html:59
+#: templates/base.html:72
 msgid "São Paulo, BR · Available for hire"
 msgstr ""
 
@@ -267,7 +267,7 @@ msgid "Debrecen, Hungary · Currently enrolled"
 msgstr ""
 
 #: templates/core/index.html:13
-msgid "Available for internships & junior roles"
+msgid "Available for new roles"
 msgstr ""
 
 #: templates/core/index.html:21
@@ -291,7 +291,7 @@ msgid "Current status"
 msgstr ""
 
 #: templates/core/index.html:39
-msgid "Actively seeking software internship or junior developer role"
+msgid "Actively seeking new opportunities in the software industry"
 msgstr ""
 
 #: templates/core/index.html:40
