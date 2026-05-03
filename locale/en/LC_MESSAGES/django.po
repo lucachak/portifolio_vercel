@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-03 21:31+0000\n"
+"POT-Creation-Date: 2026-05-03 22:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,11 +135,11 @@ msgstr ""
 msgid "Hire me"
 msgstr ""
 
-#: templates/base.html:71
+#: templates/base.html:77
 msgid "Built with purpose"
 msgstr ""
 
-#: templates/base.html:72
+#: templates/base.html:78
 msgid "São Paulo, BR · Available for hire"
 msgstr ""
 
@@ -201,15 +201,19 @@ msgid ""
 "                "
 msgstr ""
 
-#: templates/core/about.html:54
+#: templates/core/about.html:50 templates/core/index.html:32
+msgid "Download Resume"
+msgstr ""
+
+#: templates/core/about.html:57
 msgid "Core stack"
 msgstr ""
 
-#: templates/core/about.html:63
+#: templates/core/about.html:66
 msgid "Also worked with"
 msgstr ""
 
-#: templates/core/about.html:72 templates/core/index.html:51
+#: templates/core/about.html:75 templates/core/index.html:52
 msgid "Languages spoken"
 msgstr ""
 
@@ -286,27 +290,27 @@ msgstr ""
 msgid "View my work"
 msgstr ""
 
-#: templates/core/index.html:37
+#: templates/core/index.html:38
 msgid "Current status"
 msgstr ""
 
-#: templates/core/index.html:39
+#: templates/core/index.html:40
 msgid "Actively seeking new opportunities in the software industry"
 msgstr ""
 
-#: templates/core/index.html:40
+#: templates/core/index.html:41
 msgid "Remote-friendly · São Paulo · Open to relocation"
 msgstr ""
 
-#: templates/core/index.html:47
+#: templates/core/index.html:48
 msgid "Years coding"
 msgstr ""
 
-#: templates/core/index.html:55
+#: templates/core/index.html:56
 msgid "Projects shipped"
 msgstr ""
 
-#: templates/core/index.html:59
+#: templates/core/index.html:60
 msgid "Countries lived"
 msgstr ""
 
