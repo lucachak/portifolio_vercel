@@ -1,5 +1,10 @@
 #!/bin/bash
 echo "BUILD START"
-python3.9 -m pip install -r requirements.txt
-python3.9 manage.py collectstatic --noinput --clear
+
+# Instala as dependências usando a versão correta do Python
+python3 -m pip install -r requirements.txt
+
+# Coleta os arquivos estáticos (CSS, JS, Imagens)
+python3 manage.py collectstatic --noinput --clear
+
 echo "BUILD END"
