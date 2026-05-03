@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block title %}Projects — Lucas Lucachak{% endblock %}
+
+{% block content %}
+
+<section id="projects">
+    <div class="section-header fade-up">
+        <span class="section-num">02</span>
+        <h2 class="section-title">{% trans "Selected" %} <em>{% trans "work" %}</em></h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="projects-grid">
+
+        {% for project in projects %}
+
+        {% if project.featured %}
+        <!-- Featured card -->
+        <div class="project-card featured {{ project.accent }} fade-up">
+            <div class="project-content">
+                <p class="project-num">{% trans "Featured" %} / 01</p>
+                <span class="project-icon">{{ project.icon }}</span>
+                <h3 class="project-title">{{ project.title }}</h3>
+                <p class="project-desc">{{ project.description }}</p>
+                <div class="project-tags">
+                    {% for tag in project.tags %}
+                    <span class="project-tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                <a href="{{ project.github_url }}" target="_blank" class="project-link">
+                    {% trans "View on GitHub" %} <span class="project-arrow">↗</span>
+                </a>
+            </div>
+            <div class="project-preview">
+                <div class="preview-terminal">
+                    <div class="terminal-bar">
+                        <div class="t-dot r"></div>
+                        <div class="t-dot y"></div>
+                        <div class="t-dot g"></div>
+                    </div>
+                    {% for line in project.terminal_lines %}
+                    <div class="terminal-line">
+                        {% if line.type == 'comment' %}<span class="comment">{{ line.text }}</span>
+                        {% elif line.type == 'cmd' %}<span class="cmd">{{ line.text }}</span>{% if line.rest %} {{
+                        line.rest }}{% endif %}
+                        {% elif line.type == 'out' %}<span class="out">{{ line.text }}</span>
+                        {% elif line.type == 'cursor' %}<span class="cmd">$</span> <span class="cursor-blink"></span>
+                        {% else %}&nbsp;{% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        {% else %}
+        <!-- Regular card -->
+        <div class="project-card {{ project.accent }} fade-up">
+            <p class="project-num">0{{ forloop.counter }}</p>
+            <span class="project-icon">{{ project.icon }}</span>
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-desc">{{ project.description }}</p>
+            <div class="project-tags">
+                {% for tag in project.tags %}
+                <span class="project-tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            <a href="{{ project.github_url }}" target="_blank" class="project-link">
+                {% trans "View on GitHub" %} <span class="project-arrow">↗</span>
+            </a>
+        </div>
+        {% endif %}
+
+        {% endfor %}
+
+        <!-- GitHub CTA -->
+        <a href="https://github.com/lucachak" target="_blank" class="project-card accent6 fade-up"
+            style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; min-height:300px;">
+            <span style="font-size:48px; margin-bottom:20px; display:block;">⌥</span>
+            <h3 class="project-title" style="margin-bottom:12px;">{% trans "More on GitHub" %}</h3>
+            <p class="project-desc" style="max-width:240px;">
+                {% trans "Explore all repositories, experiments, and works in progress." %}
+            </p>
+            <span class="project-link" style="justify-content:center; margin-top:auto;">
+                github.com/lucachak <span class="project-arrow">↗</span>
+            </span>
+        </a>
+
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.querySelectorAll('.projects-grid .project-card').forEach((card, i) => {
+        card.style.transitionDelay = (i * 0.08) + 's';
+    });
+</script>
+{% endblock %}

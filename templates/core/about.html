@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block title %}About — Lucas Lucachak{% endblock %}
+
+{% block content %}
+
+<section id="about">
+    <div class="section-header fade-up">
+        <span class="section-num">01</span>
+        <h2 class="section-title">{% trans "About" %} <em>{% trans "me" %}</em></h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-text fade-up">
+            <p>
+                {% blocktrans %}
+                I'm <strong>Lucas Lucachak</strong> — a 24-year-old software developer
+                with a background that crosses continents. Born in Brazil, studied Computer
+                Science in <strong>Hungary</strong>, and coding since I was old enough to
+                break things and wonder why.
+                {% endblocktrans %}
+            </p>
+            <p>
+                {% blocktrans %}
+                I build full-stack web applications that solve real problems —
+                from <strong>SaaS products</strong> with payments and auth to
+                <strong>AI-integrated tools</strong> that help people make smarter
+                financial decisions. I care deeply about <em>doing things right</em>:
+                clean architecture, readable code, and systems that actually work under pressure.
+                {% endblocktrans %}
+            </p>
+            <p>
+                {% blocktrans %}
+                One of my personal challenges was building a
+                <strong>DIRB-like directory scanner</strong> in pure Python —
+                zero external dependencies, HTTP handlers written from scratch
+                following the spec. Not because it was efficient, but because
+                <em>understanding the fundamentals</em> matters more to me than shortcuts.
+                {% endblocktrans %}
+            </p>
+            <p>
+                {% blocktrans %}
+                When I'm not coding, I'm probably reading about distributed systems,
+                lifting weights, or navigating life in two languages simultaneously.
+                {% endblocktrans %}
+            </p>
+        </div>
+
+        <div class="about-right fade-up">
+
+            <div class="skills-block">
+                <div class="skills-block-title">{% trans "Core stack" %}</div>
+                <div class="skill-tags">
+                    {% for skill in core_skills %}
+                    <span class="skill-tag primary">{{ skill }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="skills-block">
+                <div class="skills-block-title">{% trans "Also worked with" %}</div>
+                <div class="skill-tags">
+                    {% for skill in extra_skills %}
+                    <span class="skill-tag">{{ skill }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="skills-block">
+                <div class="skills-block-title">{% trans "Languages spoken" %}</div>
+                <div class="langs-row">
+                    {% for lang in languages %}
+                    <div class="lang-item">
+                        <span class="lang-name">{{ lang.flag }} {{ lang.name }}</span>
+                        <span class="lang-level">{{ lang.level }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

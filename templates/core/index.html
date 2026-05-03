@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block title %}Lucas Lucachak — Software Developer{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-grid-bg"></div>
+
+    <div class="hero-left">
+        <p class="hero-tag">{% trans "Available for internships & junior roles" %}</p>
+
+        <h1 class="hero-name">
+            <span class="line1">Lucas</span>
+            <span class="line2">Lucachak</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            {% blocktrans %}
+            Software developer based in <strong>São Paulo, BR</strong> —
+            building full-stack web applications with <strong>Python</strong>,
+            <strong>Java</strong>, and a passion for writing clean,
+            purposeful code. <em>Bilingual. Multicultural. Obsessive about craft.</em>
+            {% endblocktrans %}
+        </p>
+
+        <div class="hero-actions">
+            <a href="{% url 'projects' %}" class="btn-primary">{% trans "View my work" %} ↓</a>
+            <a href="https://github.com/lucachak" target="_blank" class="btn-outline">GitHub ↗</a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="hero-status-card">
+            <p class="status-label"><span class="status-dot"></span>{% trans "Current status" %}</p>
+            <p class="status-text">
+                {% trans "Actively seeking software internship or junior developer role" %}
+                <small>{% trans "Remote-friendly · São Paulo · Open to relocation" %}</small>
+            </p>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-num">3<span>+</span></div>
+                <div class="stat-label">{% trans "Years coding" %}</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num">4</div>
+                <div class="stat-label">{% trans "Languages spoken" %}</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num">6<span>+</span></div>
+                <div class="stat-label">{% trans "Projects shipped" %}</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num">2</div>
+                <div class="stat-label">{% trans "Countries lived" %}</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+    <div class="ticker-inner">
+        {% for tech in ticker_items %}
+        <span class="ticker-item"><span class="dot">✦</span>{{ tech }}</span>
+        {% endfor %}
+        {# Duplicate for seamless loop #}
+        {% for tech in ticker_items %}
+        <span class="ticker-item"><span class="dot">✦</span>{{ tech }}</span>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
