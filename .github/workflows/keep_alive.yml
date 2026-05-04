@@ -10,7 +10,7 @@ jobs:
   ping:
     name: Ping Render Services
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 1
 
     steps:
       - name: Ping CambioMatic
