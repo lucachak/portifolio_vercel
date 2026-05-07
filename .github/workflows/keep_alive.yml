@@ -16,11 +16,11 @@ jobs:
       - name: Ping CambioMatic
         run: |
           echo "$(date '+%Y-%m-%d %H:%M:%S') - Fazendo request para https://cambiomatic.onrender.com/login ..."
-          STATUS=$(curl -o /dev/null -s -w "%{http_code}" --max-time 30 https://cambiomatic.onrender.com/login)
+          STATUS=$(curl -o /dev/null -s -w "%{http_code}" --max-time 20 https://cambiomatic.onrender.com/login)
           echo "$(date '+%Y-%m-%d %H:%M:%S') - Status: $STATUS"
 
       - name: Ping Fingen
         run: |
           echo "$(date '+%Y-%m-%d %H:%M:%S') - Fazendo request para https://fingen-zcke.onrender.com/ ..."
-          STATUS=$(curl -o /dev/null -s -w "%{http_code}" --max-time 30 https://fingen-zcke.onrender.com/)
+          STATUS=$(curl -o /dev/null -s -w "%{http_code}" --max-time 20 https://fingen-zcke.onrender.com/)
           echo "$(date '+%Y-%m-%d %H:%M:%S') - Status: $STATUS"
