@@ -54,8 +54,8 @@
                     {% for line in project.terminal_lines %}
                     <div class="terminal-line">
                         {% if line.type == 'comment' %}<span class="comment">{{ line.text }}</span>
-                        {% elif line.type == 'cmd' %}<span class="cmd">{{ line.text }}</span>{% if line.rest %} {{
-                        line.rest }}{% endif %}
+                        {% elif line.type == 'cmd' %}<span class="cmd">{{ line.text }}</span>{% if line.rest %}
+                        {{ line.rest }}{% endif %}
                         {% elif line.type == 'out' %}<span class="out">{{ line.text }}</span>
                         {% elif line.type == 'cursor' %}<span class="cmd">$</span> <span class="cursor-blink"></span>
                         {% else %}&nbsp;{% endif %}
