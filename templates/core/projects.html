@@ -32,7 +32,18 @@
                 <a href="{{ project.github_url }}" target="_blank" class="project-link">
                     {% trans "View on GitHub" %} <span class="project-arrow">↗</span>
                 </a>
+                {% if project.live_url_fingen %}
+                <a href="{{ project.live_url_fingen }}" target="_blank" class="project-link">
+                    {% trans "Preview Project" %} <span class="project-arrow">↗</span>
+                </a>
+                {% elif project.live_url_erp %}
+                <a href="{{ project.live_url_erp }}" target="_blank" class="project-link">
+                    {% trans "Preview Project" %} <span class="project-arrow">↗</span>
+                </a>
+                {% endif %}
             </div>
+
+            {% if project.featured and project.live_url_fingen %}
             <div class="project-preview">
                 <div class="preview-terminal">
                     <div class="terminal-bar">
@@ -52,6 +63,7 @@
                     {% endfor %}
                 </div>
             </div>
+            {%endif%}
         </div>
 
         {% else %}

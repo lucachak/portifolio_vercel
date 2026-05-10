@@ -45,6 +45,7 @@ PROJECTS = [
             "Three.js", "OpenRouter AI", "PDF parsing", "Spring Security",
         ],
         "github_url": "https://github.com/lucachak",
+        "live_url_fingen":"https://fingen-zcke.onrender.com/" ,
         "terminal_lines": [
             {"type": "comment", "text": _("// AI financial advisor")},
             {"type": "cmd",     "text": "POST", "rest": "/api/chat/analyze"},
@@ -86,7 +87,7 @@ PROJECTS = [
         "github_url": "https://github.com/lucachak",
     },
     {
-        "featured": False,
+        "featured": True,
         "accent": "accent4",
         "icon": "🔧",
         "title": _("Mechanic & HVAC ERP"),
@@ -98,6 +99,7 @@ PROJECTS = [
         ),
         "tags": ["Java", "Spring MVC", "ERP", "PostgreSQL", "Thymeleaf"],
         "github_url": "https://github.com/lucachak",
+        "live_url_erp":"https://cambiomatic.onrender.com/",
     },
     {
         "featured": False,
