@@ -45,7 +45,7 @@ PROJECTS = [
             "Three.js", "OpenRouter AI", "PDF parsing", "Spring Security",
         ],
         "github_url": "https://github.com/lucachak",
-        "live_url_fingen":"https://fingen-zcke.onrender.com/" ,
+        "live_url_fingen":"https://fingen-app.onrender.com" ,
         "terminal_lines": [
             {"type": "comment", "text": _("// AI financial advisor")},
             {"type": "cmd",     "text": "POST", "rest": "/api/chat/analyze"},
