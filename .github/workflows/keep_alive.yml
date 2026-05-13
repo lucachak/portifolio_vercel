@@ -22,5 +22,5 @@ jobs:
       - name: Ping Fingen
         run: |
           echo "$(date '+%Y-%m-%d %H:%M:%S') - Fazendo request para https://fingen-zcke.onrender.com/ ..."
-          STATUS=$(curl -o /dev/null -s -w "%{http_code}" --max-time 20 https://fingen-zcke.onrender.com/)
+          STATUS=$(curl -o /dev/null -s -w "%{http_code}" --max-time 20 https://fingen-app.onrender.com/)
           echo "$(date '+%Y-%m-%d %H:%M:%S') - Status: $STATUS"
