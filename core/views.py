@@ -101,19 +101,20 @@ PROJECTS = [
         "github_url": "https://github.com/lucachak",
         "live_url_erp":"https://cambiomatic.onrender.com/",
     },
-    {
+{
         "featured": False,
-        "accent": "accent5",
-        "icon": "🏦",
-        "title": _("Banking System in Pure Python"),
+        "accent": "accent3",
+        "icon": "📦",
+        "title": _("CourierIQ — Intelligent Logistics Platform"),
         "description": _(
-            "A banking simulation that explores Python's advanced internals — "
-            "metaclasses, __slots__, and descriptor protocols used to enforce "
-            "business rules at the class level. More about deep language "
-            "understanding than practical finance."
+            "Real-time package tracking microservices ecosystem processing "
+            "thousands of concurrent shipments. Features live WebSocket "
+            "dashboards, Redis-powered event streams, and dynamic ETA "
+            "recalculation. Designed with clean architecture, async "
+            "patterns, and production-grade error handling."
         ),
-        "tags": ["Python", "Metaclasses", "__slots__", "OOP patterns"],
-        "github_url": "https://github.com/lucachak",
+        "tags": ["FastAPI", "Redis", "WebSocket", "Async Python", "Microservices", "Docker"],
+        "github_url": "https://github.com/lucachak/CourierIQ",
     },
 ]
 
