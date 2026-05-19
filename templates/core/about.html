@@ -16,34 +16,44 @@
         <div class="about-text fade-up">
             <p>
                 {% blocktrans %}
-                I'm <strong>Lucas Lucachak</strong> — a 24-year-old software developer
-                with a background that crosses continents. Born in Brazil, studied Computer
-                Science in <strong>Hungary</strong>, and coding since I was old enough to
-                break things and wonder why.
+                I'm <strong>Lucas Lucachak</strong> — a software developer studying Computer Science
+                at the <strong>University of Debrecen, Hungary</strong> on a merit scholarship,
+                currently based in <strong>São Paulo, Brazil</strong>. I build full-stack web applications
+                and approach every system with the question a developer rarely asks:
+                <em>how could this be broken?</em>
                 {% endblocktrans %}
             </p>
             <p>
                 {% blocktrans %}
-                I build full-stack web applications that solve real problems —
-                from <strong>SaaS products</strong> with payments and auth to
-                <strong>AI-integrated tools</strong> that help people make smarter
-                financial decisions. I care deeply about <em>doing things right</em>:
-                clean architecture, readable code, and systems that actually work under pressure.
+                On the building side, I've shipped production ERPs, AI-integrated financial tools,
+                and SaaS boilerplates — systems with real users, real data, and real uptime requirements.
+                On the breaking side, I completed formal coursework in
+                <strong>ethical hacking</strong> at university — covering network attacks,
+                vulnerability assessment, and social engineering — and kept going from there on my own.
                 {% endblocktrans %}
             </p>
             <p>
                 {% blocktrans %}
-                One of my personal challenges was building a
-                <strong>DIRB-like directory scanner</strong> in pure Python —
-                zero external dependencies, HTTP handlers written from scratch
-                following the spec. Not because it was efficient, but because
-                <em>understanding the fundamentals</em> matters more to me than shortcuts.
+                My self-directed security research includes: <strong>network-layer attack analysis</strong>
+                (studying how DoS/DDoS traffic patterns work at the protocol level),
+                <strong>Android security research</strong> (APK structure, static analysis, payload behavior
+                in sandboxed environments), <strong>physical access testing</strong> with a
+                Raspberry Pi Pico converted into a USB HID device, and building recon tooling from scratch —
+                including a DIRB-style scanner with a hand-written HTTP stack, zero external dependencies.
+                CTF competitions tie it all together in practice.
                 {% endblocktrans %}
             </p>
             <p>
                 {% blocktrans %}
-                When I'm not coding, I'm probably reading about distributed systems,
-                lifting weights, or navigating life in two languages simultaneously.
+                I also spent time maintaining <strong>electric bike systems</strong> — modifying lithium
+                battery packs, managing voltage curves, servicing motors by hand. Same lesson every time:
+                abstractions hide complexity, and <em>understanding what's underneath is always worth it.</em>
+                {% endblocktrans %}
+            </p>
+            <p>
+                {% blocktrans %}
+                I write in four languages, have lived in two countries, and bring both
+                a builder's instinct and an attacker's mindset to whatever I work on.
                 {% endblocktrans %}
             </p>
             <div class="about-actions" style="margin-top: 32px;">
@@ -59,6 +69,21 @@
                     {% for skill in core_skills %}
                     <span class="skill-tag primary">{{ skill }}</span>
                     {% endfor %}
+                </div>
+            </div>
+
+            <div class="skills-block">
+                <div class="skills-block-title">{% trans "Security & low-level" %}</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Ethical Hacking (coursework)</span>
+                    <span class="skill-tag">CTF competitions</span>
+                    <span class="skill-tag">Network attack analysis</span>
+                    <span class="skill-tag">Android security research</span>
+                    <span class="skill-tag">USB HID / physical access</span>
+                    <span class="skill-tag">Web recon tooling</span>
+                    <span class="skill-tag">Network protocols (raw)</span>
+                    <span class="skill-tag">Linux internals</span>
+                    <span class="skill-tag">VMs & sandboxing</span>
                 </div>
             </div>
 

@@ -32,18 +32,14 @@
                 <a href="{{ project.github_url }}" target="_blank" class="project-link">
                     {% trans "View on GitHub" %} <span class="project-arrow">↗</span>
                 </a>
-                {% if project.live_url_fingen %}
-                <a href="{{ project.live_url_fingen }}" target="_blank" class="project-link">
-                    {% trans "Preview Project" %} <span class="project-arrow">↗</span>
-                </a>
-                {% elif project.live_url_erp %}
-                <a href="{{ project.live_url_erp }}" target="_blank" class="project-link">
-                    {% trans "Preview Project" %} <span class="project-arrow">↗</span>
+                {% if project.live_url %}
+                <a href="{{ project.live_url }}" target="_blank" class="project-link">
+                    {% trans "Live demo" %} <span class="project-arrow">↗</span>
                 </a>
                 {% endif %}
             </div>
 
-            {% if project.featured and project.live_url_fingen %}
+            {% if project.terminal_lines %}
             <div class="project-preview">
                 <div class="preview-terminal">
                     <div class="terminal-bar">
@@ -63,7 +59,7 @@
                     {% endfor %}
                 </div>
             </div>
-            {%endif%}
+            {% endif %}
         </div>
 
         {% else %}
@@ -81,6 +77,11 @@
             <a href="{{ project.github_url }}" target="_blank" class="project-link">
                 {% trans "View on GitHub" %} <span class="project-arrow">↗</span>
             </a>
+            {% if project.live_url %}
+            <a href="{{ project.live_url }}" target="_blank" class="project-link">
+                {% trans "Live demo" %} <span class="project-arrow">↗</span>
+            </a>
+            {% endif %}
         </div>
         {% endif %}
 

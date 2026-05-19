@@ -8,138 +8,88 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-03 22:20+0000\n"
+"POT-Creation-Date: 2026-05-19 20:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: core/views.py:23
-msgid "Portuguese"
-msgstr "Português"
-
-#: core/views.py:23
-msgid "Native"
-msgstr "Nativo"
-
-#: core/views.py:24
-msgid "English"
-msgstr "Inglês"
-
-#: core/views.py:24
-msgid "Fluent"
-msgstr "Fluente"
-
-#: core/views.py:25
-msgid "Hungarian"
-msgstr "Húngaro"
-
-#: core/views.py:25
-msgid "Intermediate"
-msgstr "Intermediário"
-
-#: core/views.py:26
-msgid "Russian"
-msgstr "Russo"
-
-#: core/views.py:26
-msgid "Basic"
-msgstr "Básico"
-
-#: core/views.py:36
+#: core/views.py:10
 msgid ""
-"Personal and household finance management web app powered by AI. Connects to "
-"OpenRouter's API to give intelligent advice based on your actual financial "
-"data. Upload bank statements as PDF and let the system analyze patterns, "
-"flag risks, and suggest optimizations. Built with a full Spring Boot backend "
-"and Thymeleaf frontend with an animated Three.js coin visualization on the "
+"Most people manage money reactively — they notice problems after they "
+"happen. FinGen changes that. Upload a bank statement PDF and the system "
+"parses your real transaction history, feeds it to an AI financial advisor, "
+"and returns concrete recommendations: where you're bleeding money, how your "
+"cash flow compares month-over-month, and where to invest based on current "
+"market data scraped live. Built with Spring Boot on the backend, Thymeleaf + "
+"HTMX on the front, and a Three.js animated currency visualization on the "
 "landing page."
-msgstr ""
-"Aplicativo web de gestão financeira pessoal e doméstica impulsionado por IA. "
-"Conecta-se à API do OpenRouter para oferecer conselhos inteligentes baseados "
-"em seus dados financeiros reais. Faça o upload de extratos bancários em PDF "
-"e deixe o sistema analisar padrões, sinalizar riscos e sugerir otimizações. "
-"Construído com um backend completo em Spring Boot e frontend Thymeleaf com "
-"uma visualização de moeda em Three.js animada na página inicial."
+msgstr "A maioria das pessoas gerencia dinheiro de forma reativa — elas percebem os problemas depois que eles acontecem. O FinGen muda isso. Faça o upload de um extrato bancário em PDF e o sistema analisa seu histórico real de transações, envia para um consultor financeiro com IA e retorna recomendações concretas: onde você está perdendo dinheiro, como seu fluxo de caixa se compara mês a mês e onde investir com base em dados de mercado atuais extraídos em tempo real. Construído com Spring Boot no backend, Thymeleaf + HTMX no front-end, e uma visualização de moeda animada em Three.js na página inicial."
 
-#: core/views.py:49
-msgid "// AI financial advisor"
-msgstr "// Consultor financeiro de IA"
-
-#: core/views.py:52
-msgid "→ Analyzing your finances..."
-msgstr "→ Analisando suas finanças..."
-
-#: core/views.py:53
-msgid "→ Monthly burn: R$ 3,240"
-msgstr "→ Gasto mensal: R$ 3.240"
-
-#: core/views.py:54
-msgid "→ Savings rate: 18.4%"
-msgstr "→ Taxa de poupança: 18,4%"
-
-#: core/views.py:55
-msgid "→ Recommendation ready ✓"
-msgstr "→ Recomendação pronta ✓"
-
-#: core/views.py:66
+#: core/views.py:46
 msgid ""
-"Full-featured SaaS boilerplate with subscription billing via Stripe, Google/"
-"GitHub OAuth2 login, async tasks, and a Postgres database hosted on Neon. "
-"Production-ready architecture with proper separation of concerns and "
-"environment configuration."
-msgstr ""
-"Boilerplate SaaS completo com faturamento de assinatura via Stripe, login "
-"OAuth2 via Google/GitHub, tarefas assíncronas e banco de dados Postgres "
-"hospedado na Neon. Arquitetura pronta para produção com separação adequada "
-"de responsabilidades e configuração de ambiente."
+"A brute-force web directory scanner built entirely in pure Python — no "
+"external libraries, no requests, no shortcuts. HTTP and HTTPS handlers "
+"written from scratch against the RFC spec. The point wasn't to reinvent the "
+"wheel; it was to understand exactly what tools like DIRB are doing under the "
+"hood before trusting them blindly. Concurrent scanning, configurable "
+"wordlists, and clean output formatting."
+msgstr "Um scanner de diretórios web por força bruta construído inteiramente em Python puro — sem bibliotecas externas, sem requests, sem atalhos. Handlers HTTP e HTTPS escritos do zero seguindo a especificação RFC. O objetivo não era reinventar a roda; era entender exatamente o que ferramentas como o DIRB estão fazendo por baixo dos panos antes de confiar nelas cegamente. Escaneamento concorrente, wordlists configuráveis e formatação limpa de saída."
 
-#: core/views.py:80
+#: core/views.py:69
 msgid ""
-"A DIRB-like web directory brute-force scanner written in pure Python — zero "
-"external libraries. HTTP/HTTPS handlers implemented from scratch following "
-"RFC specifications. A deliberate exercise in understanding the fundamentals "
-"before reaching for abstractions."
-msgstr ""
-"Um scanner de brute-force de diretórios web estilo DIRB escrito em Python "
-"puro — zero bibliotecas externas. Handlers HTTP/HTTPS implementados do zero "
-"seguindo especificações RFC. Um exercício deliberado na compreensão dos "
-"fundamentos antes de recorrer a abstrações."
+"Job hunting at scale is a numbers game. CV-Spammer is a web scraper and "
+"automation tool that searches job boards, filters listings by role and "
+"location, and fires off tailored application emails — automatically. Built "
+"to solve a real problem (sending hundreds of applications manually is "
+"brutal), and as a practical exercise in scraping, browser automation, and "
+"SMTP handling."
+msgstr "Procurar emprego em escala é um jogo de números. CV-Spammer é um web scraper e ferramenta de automação que pesquisa em painéis de empregos, filtra as vagas por função e localização, e dispara e-mails de candidatura personalizados — automaticamente. Construído para resolver um problema real (enviar centenas de candidaturas manualmente é brutal), e como um exercício prático de scraping, automação de navegador e manipulação SMTP."
 
-#: core/views.py:92
-msgid "Mechanic & HVAC ERP"
-msgstr "ERP para Mecânicos e Climatização"
-
-#: core/views.py:94
+#: core/views.py:85
 msgid ""
-"Business management system for mechanic shops and HVAC service companies. "
-"Handles service orders, inventory, client records, and invoicing. Designed "
-"for small business operators who need something that just works."
-msgstr ""
-"Sistema de gestão empresarial para oficinas mecânicas e empresas de serviços "
-"de climatização. Gerencia ordens de serviço, estoque, registros de clientes "
-"e faturamento. Projetado para operadores de pequenas empresas que precisam "
-"de algo que simplesmente funcione."
+"Small auto repair shops run on paper, WhatsApp messages, and memory. "
+"CambioMatic replaces that with a full ERP: service orders from open to "
+"invoiced, inventory tracking, customer records, and billing — all in one "
+"place. Built for non-technical operators who need something that just works, "
+"without training or IT support. Currently live and in use."
+msgstr "Pequenas oficinas mecânicas funcionam com papel, mensagens de WhatsApp e memória. O CambioMatic substitui isso por um ERP completo: ordens de serviço do início ao faturamento, controle de estoque, registros de clientes e cobrança — tudo em um só lugar. Construído para operadores não técnicos que precisam de algo que simplesmente funcione, sem treinamento ou suporte de TI. Atualmente em produção e uso."
 
-#: core/views.py:106
-msgid "Banking System in Pure Python"
-msgstr "Sistema Bancário em Python Puro"
-
-#: core/views.py:108
+#: core/views.py:102
 msgid ""
-"A banking simulation that explores Python's advanced internals — "
-"metaclasses, __slots__, and descriptor protocols used to enforce business "
-"rules at the class level. More about deep language understanding than "
-"practical finance."
-msgstr ""
-"Uma simulação bancária que explora os internos avançados do Python — "
-"metaclasses, __slots__ e protocolos de descritores usados para aplicar "
-"regras de negócio ao nível de classe. Mais sobre a compreensão profunda da "
-"linguagem do que finanças práticas."
+"Starting a SaaS from scratch means solving the same problems every time: "
+"auth, subscriptions, async tasks, database. This boilerplate eliminates "
+"that. Stripe subscription billing, OAuth2 via Google and GitHub, Celery for "
+"background jobs, and Postgres on Neon — production-ready architecture with "
+"proper separation of concerns. Designed to be the foundation you actually "
+"want to build on."
+msgstr "Começar um SaaS do zero significa resolver os mesmos problemas todas as vezes: autenticação, assinaturas, tarefas assíncronas, banco de dados. Este boilerplate elimina isso. Faturamento de assinaturas via Stripe, OAuth2 via Google e GitHub, Celery para tarefas em segundo plano e Postgres no Neon — arquitetura pronta para produção com separação adequada de responsabilidades. Projetado para ser a base sobre a qual você realmente quer construir."
+
+#: core/views.py:127
+msgid ""
+"A collection of self-directed security research done alongside formal "
+"ethical hacking coursework at university. Areas covered: network-layer "
+"attack analysis (understanding how DoS/DDoS traffic behaves at the protocol "
+"level, studied in isolated lab environments); Android security research (APK "
+"structure, static analysis, and payload behavior in sandboxed VMs); physical "
+"access testing with a Raspberry Pi Pico flashed as a USB HID device (Rubber "
+"Ducky-style keystroke injection); and web recon automation. All conducted in "
+"controlled environments — VMs, local labs, or with explicit permission. The "
+"goal: understand how attacks work before trying to defend against them."
+msgstr "Uma coleção de pesquisas de segurança autodirecionadas feitas em paralelo ao curso formal de ethical hacking na universidade. Áreas abordadas: análise de ataques na camada de rede (entendendo como o tráfego DoS/DDoS se comporta no nível do protocolo, estudado em ambientes de laboratório isolados); pesquisa de segurança Android (estrutura do APK, análise estática e comportamento de payload em VMs isoladas); testes de acesso físico com um Raspberry Pi Pico modificado como um dispositivo USB HID (injeção de teclas no estilo Rubber Ducky); e automação de reconhecimento web. Tudo conduzido em ambientes controlados — VMs, laboratórios locais, ou com permissão explícita. O objetivo: entender como os ataques funcionam antes de tentar defender-se contra eles."
+
+#: core/views.py:155
+msgid ""
+"Real-time package tracking system designed for throughput. Microservices "
+"architecture with FastAPI, event streams via Redis, live WebSocket "
+"dashboards, and dynamic ETA recalculation as shipments move. Built to "
+"explore async patterns, clean architecture, and production-grade error "
+"handling under concurrent load."
+msgstr "Sistema de rastreamento de pacotes em tempo real projetado para alto rendimento. Arquitetura de microsserviços com FastAPI, fluxos de eventos via Redis, dashboards ao vivo em WebSocket e recálculo dinâmico de ETA conforme as remessas se movem. Construído para explorar padrões assíncronos, arquitetura limpa e tratamento de erros de nível de produção sob carga concorrente."
 
 #: templates/base.html:33 templates/core/about.html:11
 msgid "About"
@@ -172,107 +122,91 @@ msgstr "mim"
 #: templates/core/about.html:18
 msgid ""
 "\n"
-"                I'm <strong>Lucas Lucachak</strong> — a 24-year-old software "
-"developer\n"
-"                with a background that crosses continents. Born in Brazil, "
-"studied Computer\n"
-"                Science in <strong>Hungary</strong>, and coding since I was "
-"old enough to\n"
-"                break things and wonder why.\n"
+"                I'm <strong>Lucas Lucachak</strong> — a software developer "
+"studying Computer Science\n"
+"                at the <strong>University of Debrecen, Hungary</strong> on a "
+"merit scholarship,\n"
+"                currently based in <strong>São Paulo, Brazil</strong>. I "
+"build full-stack web applications\n"
+"                and approach every system with the question a developer "
+"rarely asks:\n"
+"                <em>how could this be broken?</em>\n"
 "                "
 msgstr ""
-"\n"
-"                Eu sou <strong>Lucas Lucachak</strong> — um desenvolvedor de "
-"software de 24 anos\n"
-"                com uma trajetória que cruza continentes. Nascido no Brasil, "
-"estudei Ciência da\n"
-"                Computação na <strong>Hungria</strong>, e programo desde que "
-"era idade suficiente para\n"
-"                quebrar as coisas e me perguntar o porquê.\n"
-"                "
 
-#: templates/core/about.html:26
+#: templates/core/about.html:27
 msgid ""
 "\n"
-"                I build full-stack web applications that solve real problems "
-"—\n"
-"                from <strong>SaaS products</strong> with payments and auth "
-"to\n"
-"                <strong>AI-integrated tools</strong> that help people make "
-"smarter\n"
-"                financial decisions. I care deeply about <em>doing things "
-"right</em>:\n"
-"                clean architecture, readable code, and systems that actually "
-"work under pressure.\n"
+"                On the building side, I've shipped production ERPs, AI-"
+"integrated financial tools,\n"
+"                and SaaS boilerplates — systems with real users, real data, "
+"and real uptime requirements.\n"
+"                On the breaking side, I completed formal coursework in\n"
+"                <strong>ethical hacking</strong> at university — covering "
+"network attacks,\n"
+"                vulnerability assessment, and social engineering — and kept "
+"going from there on my own.\n"
 "                "
 msgstr ""
-"\n"
-"                Eu construo aplicações web full-stack que resolvem problemas "
-"reais —\n"
-"                desde <strong>produtos SaaS</strong> com pagamentos e "
-"autenticação até\n"
-"                <strong>ferramentas integradas com IA</strong> que ajudam as "
-"pessoas a tomar decisões\n"
-"                financeiras mais inteligentes. Eu me importo profundamente "
-"em <em>fazer as coisas direito</em>:\n"
-"                arquitetura limpa, código legível e sistemas que realmente "
-"funcionam sob pressão.\n"
-"                "
 
-#: templates/core/about.html:35
+#: templates/core/about.html:36
 msgid ""
 "\n"
-"                One of my personal challenges was building a\n"
-"                <strong>DIRB-like directory scanner</strong> in pure Python "
-"—\n"
-"                zero external dependencies, HTTP handlers written from "
-"scratch\n"
-"                following the spec. Not because it was efficient, but "
-"because\n"
-"                <em>understanding the fundamentals</em> matters more to me "
-"than shortcuts.\n"
+"                My self-directed security research includes: <strong>network-"
+"layer attack analysis</strong>\n"
+"                (studying how DoS/DDoS traffic patterns work at the protocol "
+"level),\n"
+"                <strong>Android security research</strong> (APK structure, "
+"static analysis, payload behavior\n"
+"                in sandboxed environments), <strong>physical access testing</"
+"strong> with a\n"
+"                Raspberry Pi Pico converted into a USB HID device, and "
+"building recon tooling from scratch —\n"
+"                including a DIRB-style scanner with a hand-written HTTP "
+"stack, zero external dependencies.\n"
+"                CTF competitions tie it all together in practice.\n"
 "                "
 msgstr ""
-"\n"
-"                Um dos meus desafios pessoais foi construir um\n"
-"                <strong>scanner de diretórios estilo DIRB</strong> em Python "
-"puro —\n"
-"                zero dependências externas, handlers HTTP escritos do zero\n"
-"                seguindo a especificação. Não porque fosse eficiente, mas "
-"porque\n"
-"                <em>entender os fundamentos</em> importa mais para mim do "
-"que atalhos.\n"
-"                "
 
-#: templates/core/about.html:44
+#: templates/core/about.html:47
 msgid ""
 "\n"
-"                When I'm not coding, I'm probably reading about distributed "
-"systems,\n"
-"                lifting weights, or navigating life in two languages "
-"simultaneously.\n"
+"                I also spent time maintaining <strong>electric bike systems</"
+"strong> — modifying lithium\n"
+"                battery packs, managing voltage curves, servicing motors by "
+"hand. Same lesson every time:\n"
+"                abstractions hide complexity, and <em>understanding what's "
+"underneath is always worth it.</em>\n"
 "                "
 msgstr ""
-"\n"
-"                Quando não estou programando, provavelmente estou lendo "
-"sobre sistemas distribuídos,\n"
-"                levantando peso ou navegando na vida em dois idiomas "
-"simultaneamente.\n"
-"                "
 
-#: templates/core/about.html:50 templates/core/index.html:32
+#: templates/core/about.html:54
+msgid ""
+"\n"
+"                I write in four languages, have lived in two countries, and "
+"bring both\n"
+"                a builder's instinct and an attacker's mindset to whatever I "
+"work on.\n"
+"                "
+msgstr ""
+
+#: templates/core/about.html:60 templates/core/index.html:32
 msgid "Download Resume"
 msgstr "Baixar Currículo"
 
-#: templates/core/about.html:57
+#: templates/core/about.html:67
 msgid "Core stack"
 msgstr "Stack principal"
 
-#: templates/core/about.html:66
+#: templates/core/about.html:76
+msgid "Security & low-level"
+msgstr "Segurança e baixo nível"
+
+#: templates/core/about.html:91
 msgid "Also worked with"
 msgstr "Também trabalhei com"
 
-#: templates/core/about.html:75 templates/core/index.html:52
+#: templates/core/about.html:100 templates/core/index.html:52
 msgid "Languages spoken"
 msgstr "Idiomas falados"
 
@@ -289,12 +223,22 @@ msgid "Got a project<br><em>or a role</em><br>in mind?"
 msgstr "Tem um projeto<br><em>ou uma vaga</em><br>em mente?"
 
 #: templates/core/contact.html:21
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                I'm looking for internship and junior developer "
+#| "opportunities —\n"
+#| "                remote or in São Paulo. I work fast, communicate "
+#| "clearly,\n"
+#| "                and bring genuine curiosity to whatever I build.\n"
+#| "                "
 msgid ""
 "\n"
-"                I'm looking for internship and junior developer "
-"opportunities —\n"
-"                remote or in São Paulo. I work fast, communicate clearly,\n"
-"                and bring genuine curiosity to whatever I build.\n"
+"                I'm looking for junior developer or security-adjacent roles "
+"— remote or on-site in Europe.\n"
+"                I work fast, communicate clearly across languages,\n"
+"                and bring both a builder's and an attacker's mindset to "
+"every project.\n"
 "                "
 msgstr ""
 "\n"
@@ -305,18 +249,27 @@ msgstr ""
 "                e trago curiosidade genuína para tudo o que construo.\n"
 "                "
 
-#: templates/core/contact.html:62
+#: templates/core/contact.html:55
 msgid "Availability"
 msgstr "Disponibilidade"
 
-#: templates/core/contact.html:64
+#: templates/core/contact.html:57
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                    Open to internships and junior developer positions "
+#| "starting immediately.\n"
+#| "                    Available for full-time or part-time arrangements.\n"
+#| "                    <small>Preferred: remote or São Paulo, SP · Open to "
+#| "relocation for the right role</small>\n"
+#| "                    "
 msgid ""
 "\n"
-"                    Open to internships and junior developer positions "
-"starting immediately.\n"
-"                    Available for full-time or part-time arrangements.\n"
-"                    <small>Preferred: remote or São Paulo, SP · Open to "
-"relocation for the right role</small>\n"
+"                    Open to junior developer and security-adjacent positions "
+"— immediately available.\n"
+"                    Full-time or part-time, remote or on-site.\n"
+"                    <small>Based in São Paulo, BR · EU citizen (Hungarian) · "
+"Open to relocation</small>\n"
 "                    "
 msgstr ""
 "\n"
@@ -328,35 +281,52 @@ msgstr ""
 "realocação para a vaga certa</small>\n"
 "                    "
 
-#: templates/core/contact.html:75
-msgid "São Paulo, SP — Brazil"
-msgstr "São Paulo, SP — Brasil"
+#: templates/core/contact.html:68
+#, fuzzy
+#| msgid "Debrecen, Hungary · Currently enrolled"
+msgid "Debrecen, Hungary — EU"
+msgstr "Debrecen, Hungria · Bolsista · Atualmente matriculado"
 
-#: templates/core/contact.html:76
-msgid "GMT-3 · Willing to work across time zones"
+#: templates/core/contact.html:69
+#, fuzzy
+#| msgid "GMT-3 · Willing to work across time zones"
+msgid "GMT+2 · Willing to work across time zones"
 msgstr "GMT-3 · Disposto a trabalhar em diferentes fusos horários"
 
-#: templates/core/contact.html:83
-msgid "Computer Science · Universidade de Debrecen"
+#: templates/core/contact.html:76
+#, fuzzy
+#| msgid "Computer Science · Universidade de Debrecen"
+msgid "Computer Science · University of Debrecen"
 msgstr "Ciência da Computação · Universidade de Debrecen"
 
-#: templates/core/contact.html:84
-msgid "Debrecen, Hungary · Currently enrolled"
-msgstr "Debrecen, Hungria · Atualmente matriculado"
+#: templates/core/contact.html:77
+#, fuzzy
+#| msgid "Debrecen, Hungary · Currently enrolled"
+msgid "Hungary · Merit scholarship · Currently enrolled"
+msgstr "Debrecen, Hungria · Bolsista · Atualmente matriculado"
 
 #: templates/core/index.html:13
 msgid "Available for new roles"
 msgstr "Disponível para novas oportunidades"
 
 #: templates/core/index.html:21
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "            Software developer based in <strong>São Paulo, BR</strong> —\n"
+#| "            building full-stack web applications with <strong>Python</"
+#| "strong>,\n"
+#| "            <strong>Java</strong>, and a passion for writing clean,\n"
+#| "            purposeful code. <em>Bilingual. Multicultural. Obsessive "
+#| "about craft.</em>\n"
+#| "            "
 msgid ""
 "\n"
-"            Software developer based in <strong>São Paulo, BR</strong> —\n"
-"            building full-stack web applications with <strong>Python</"
-"strong>,\n"
-"            <strong>Java</strong>, and a passion for writing clean,\n"
-"            purposeful code. <em>Bilingual. Multicultural. Obsessive about "
-"craft.</em>\n"
+"            Full-stack developer based in <strong>São Paulo, BR</strong> —\n"
+"            building production-grade web applications with <strong>Python</"
+"strong> and\n"
+"            <strong>Java</strong>, with a sharp eye for how systems\n"
+"            <em>break</em> — and how to make them not.\n"
 "            "
 msgstr ""
 "\n"
@@ -378,12 +348,17 @@ msgid "Current status"
 msgstr "Status atual"
 
 #: templates/core/index.html:40
-msgid "Actively seeking new opportunities in the software industry"
-msgstr "Ativamente buscando novas oportunidades na indústria de software"
+#, fuzzy
+#| msgid "Actively seeking software internship or junior developer role"
+msgid "Actively seeking junior developer or security-adjacent roles"
+msgstr ""
+"Buscando ativamente estágio em software ou cargo de desenvolvedor júnior"
 
 #: templates/core/index.html:41
-msgid "Remote-friendly · São Paulo · Open to relocation"
-msgstr "Remoto-friendly · São Paulo · Aberto a realocação"
+#, fuzzy
+#| msgid "Remote-friendly · São Paulo · Open to relocation"
+msgid "Remote-friendly · Europe · Open to relocation"
+msgstr "Remoto · São Paulo · Cidadão europeu · Aberto a realocação"
 
 #: templates/core/index.html:48
 msgid "Years coding"
@@ -411,15 +386,19 @@ msgstr "trabalhos"
 msgid "Featured"
 msgstr "Destaque"
 
-#: templates/core/projects.html:33 templates/core/projects.html:70
+#: templates/core/projects.html:33 templates/core/projects.html:78
 msgid "View on GitHub"
 msgstr "Ver no GitHub"
 
-#: templates/core/projects.html:81
+#: templates/core/projects.html:37 templates/core/projects.html:82
+msgid "Live demo"
+msgstr "Demo ao vivo"
+
+#: templates/core/projects.html:94
 msgid "More on GitHub"
 msgstr "Mais no GitHub"
 
-#: templates/core/projects.html:83
+#: templates/core/projects.html:96
 msgid "Explore all repositories, experiments, and works in progress."
 msgstr "Explore todos os repositórios, experimentos e trabalhos em andamento."
 
@@ -1668,6 +1647,209 @@ msgstr ""
 msgid "Connect, get help, or contribute"
 msgstr ""
 
-#~ msgid "Actively seeking software internship or junior developer role"
+#~ msgid "Portuguese"
+#~ msgstr "Português"
+
+#~ msgid "Native"
+#~ msgstr "Nativo"
+
+#~ msgid "English"
+#~ msgstr "Inglês"
+
+#~ msgid "Fluent"
+#~ msgstr "Fluente"
+
+#~ msgid "Hungarian"
+#~ msgstr "Húngaro"
+
+#~ msgid "Intermediate"
+#~ msgstr "Intermediário"
+
+#~ msgid "Spanish"
+#~ msgstr "Espanhol"
+
+#~ msgid ""
+#~ "Personal and household finance management web app powered by AI. Connects "
+#~ "to OpenRouter's API to give intelligent advice based on your actual "
+#~ "financial data. Upload bank statements as PDF and let the system analyze "
+#~ "patterns, flag risks, and suggest optimizations. Built with a full Spring "
+#~ "Boot backend and Thymeleaf frontend with an animated Three.js coin "
+#~ "visualization on the landing page."
 #~ msgstr ""
-#~ "Buscando ativamente estágio em software ou cargo de desenvolvedor júnior"
+#~ "Aplicativo web de gestão financeira pessoal e doméstica impulsionado por "
+#~ "IA. Conecta-se à API do OpenRouter para oferecer conselhos inteligentes "
+#~ "baseados em seus dados financeiros reais. Faça o upload de extratos "
+#~ "bancários em PDF e deixe o sistema analisar padrões, sinalizar riscos e "
+#~ "sugerir otimizações. Construído com um backend completo em Spring Boot e "
+#~ "frontend Thymeleaf com uma visualização de moeda em Three.js animada na "
+#~ "página inicial."
+
+#~ msgid "// AI financial advisor"
+#~ msgstr "// Consultor financeiro de IA"
+
+#~ msgid "→ Analyzing your finances..."
+#~ msgstr "→ Analisando suas finanças..."
+
+#~ msgid "→ Monthly burn: R$ 3,240"
+#~ msgstr "→ Gasto mensal: R$ 3.240"
+
+#~ msgid "→ Savings rate: 18.4%"
+#~ msgstr "→ Taxa de poupança: 18,4%"
+
+#~ msgid "→ Recommendation ready ✓"
+#~ msgstr "→ Recomendação pronta ✓"
+
+#~ msgid ""
+#~ "Full-featured SaaS boilerplate with subscription billing via Stripe, "
+#~ "Google/GitHub OAuth2 login, async tasks, and a Postgres database hosted "
+#~ "on Neon. Production-ready architecture with proper separation of concerns "
+#~ "and environment configuration."
+#~ msgstr ""
+#~ "Boilerplate SaaS completo com faturamento de assinatura via Stripe, login "
+#~ "OAuth2 via Google/GitHub, tarefas assíncronas e banco de dados Postgres "
+#~ "hospedado na Neon. Arquitetura pronta para produção com separação "
+#~ "adequada de responsabilidades e configuração de ambiente."
+
+#~ msgid ""
+#~ "A DIRB-like web directory brute-force scanner written in pure Python — "
+#~ "zero external libraries. HTTP/HTTPS handlers implemented from scratch "
+#~ "following RFC specifications. A deliberate exercise in understanding the "
+#~ "fundamentals before reaching for abstractions."
+#~ msgstr ""
+#~ "Um scanner de brute-force de diretórios web estilo DIRB escrito em Python "
+#~ "puro — zero bibliotecas externas. Handlers HTTP/HTTPS implementados do "
+#~ "zero seguindo especificações RFC. Um exercício deliberado na compreensão "
+#~ "dos fundamentos antes de recorrer a abstrações."
+
+#~ msgid "Mechanic & HVAC ERP"
+#~ msgstr "ERP para Mecânicos e Climatização"
+
+#~ msgid ""
+#~ "Business management system for mechanic shops and HVAC service companies. "
+#~ "Handles service orders, inventory, client records, and invoicing. "
+#~ "Designed for small business operators who need something that just works."
+#~ msgstr ""
+#~ "Sistema de gestão empresarial para oficinas mecânicas e empresas de "
+#~ "serviços de climatização. Gerencia ordens de serviço, estoque, registros "
+#~ "de clientes e faturamento. Projetado para operadores de pequenas empresas "
+#~ "que precisam de algo que simplesmente funcione."
+
+#~ msgid "Banking System in Pure Python"
+#~ msgstr "Sistema Bancário em Python Puro"
+
+#~ msgid ""
+#~ "A banking simulation that explores Python's advanced internals — "
+#~ "metaclasses, __slots__, and descriptor protocols used to enforce business "
+#~ "rules at the class level. More about deep language understanding than "
+#~ "practical finance."
+#~ msgstr ""
+#~ "Uma simulação bancária que explora os internos avançados do Python — "
+#~ "metaclasses, __slots__ e protocolos de descritores usados para aplicar "
+#~ "regras de negócio ao nível de classe. Mais sobre a compreensão profunda "
+#~ "da linguagem do que finanças práticas."
+
+#~ msgid ""
+#~ "\n"
+#~ "                I'm <strong>Lucas Lucachak</strong> — a 24-year-old "
+#~ "software developer\n"
+#~ "                with a background that crosses continents. Born in "
+#~ "Brazil, studied Computer\n"
+#~ "                Science in <strong>Hungary</strong>, and coding since I "
+#~ "was old enough to\n"
+#~ "                break things and wonder why.\n"
+#~ "                "
+#~ msgstr ""
+#~ "\n"
+#~ "                Eu sou <strong>Lucas Lucachak</strong> — um desenvolvedor "
+#~ "de software de 24 anos\n"
+#~ "                com uma trajetória que cruza continentes. Nascido no "
+#~ "Brasil, estudei Ciência da\n"
+#~ "                Computação na <strong>Hungria</strong>, e programo desde "
+#~ "que era idade suficiente para\n"
+#~ "                quebrar as coisas e me perguntar o porquê.\n"
+#~ "                "
+
+#~ msgid ""
+#~ "\n"
+#~ "                I build full-stack web applications that solve real "
+#~ "problems —\n"
+#~ "                from <strong>SaaS products</strong> with payments and "
+#~ "auth to\n"
+#~ "                <strong>AI-integrated tools</strong> that help people "
+#~ "make smarter\n"
+#~ "                financial decisions. I care deeply about <em>doing things "
+#~ "right</em>:\n"
+#~ "                clean architecture, readable code, and systems that "
+#~ "actually work under pressure.\n"
+#~ "                "
+#~ msgstr ""
+#~ "\n"
+#~ "                Eu construo aplicações web full-stack que resolvem "
+#~ "problemas reais —\n"
+#~ "                desde <strong>produtos SaaS</strong> com pagamentos e "
+#~ "autenticação até\n"
+#~ "                <strong>ferramentas integradas com IA</strong> que ajudam "
+#~ "as pessoas a tomar decisões\n"
+#~ "                financeiras mais inteligentes. Eu me importo "
+#~ "profundamente em <em>fazer as coisas direito</em>:\n"
+#~ "                arquitetura limpa, código legível e sistemas que "
+#~ "realmente funcionam sob pressão.\n"
+#~ "                "
+
+#~ msgid ""
+#~ "\n"
+#~ "                One of my personal challenges was building a\n"
+#~ "                <strong>DIRB-like directory scanner</strong> in pure "
+#~ "Python —\n"
+#~ "                zero external dependencies, HTTP handlers written from "
+#~ "scratch\n"
+#~ "                following the spec. Not because it was efficient, but "
+#~ "because\n"
+#~ "                <em>understanding the fundamentals</em> matters more to "
+#~ "me than shortcuts.\n"
+#~ "                "
+#~ msgstr ""
+#~ "\n"
+#~ "                Um dos meus desafios pessoais foi construir um\n"
+#~ "                <strong>scanner de diretórios estilo DIRB</strong> em "
+#~ "Python puro —\n"
+#~ "                zero dependências externas, handlers HTTP escritos do "
+#~ "zero\n"
+#~ "                seguindo a especificação. Não porque fosse eficiente, mas "
+#~ "porque\n"
+#~ "                <em>entender os fundamentos</em> importa mais para mim do "
+#~ "que atalhos.\n"
+#~ "                "
+
+#~ msgid ""
+#~ "\n"
+#~ "                When I'm not coding, I'm probably reading about "
+#~ "distributed systems,\n"
+#~ "                lifting weights, or navigating life in two languages "
+#~ "simultaneously.\n"
+#~ "                "
+#~ msgstr ""
+#~ "\n"
+#~ "                Quando não estou programando, provavelmente estou lendo "
+#~ "sobre sistemas distribuídos,\n"
+#~ "                levantando peso ou navegando na vida em dois idiomas "
+#~ "simultaneamente.\n"
+#~ "                "
+
+#~ msgid "São Paulo, SP — Brazil"
+#~ msgstr "São Paulo, SP — Brasil"
+
+#~ msgid "Actively seeking new opportunities in the software industry"
+#~ msgstr "Buscando vagas de dev júnior ou funções adjacentes à segurança"
+
+#~ msgid "Security Research & Offensive Tooling"
+#~ msgstr "Pesquisa de Segurança e Ferramentas Ofensivas"
+
+#~ msgid "CV-Spammer — Automated Job Application Bot"
+#~ msgstr "CV-Spammer — Bot de Candidatura Automatizada"
+
+#~ msgid "CourierIQ — Logistics Microservices"
+#~ msgstr "CourierIQ — Microsserviços de Logística"
+
+#~ msgid "Django SaaS Boilerplate"
+#~ msgstr "Boilerplate SaaS em Django"
