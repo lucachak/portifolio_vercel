@@ -185,12 +185,12 @@ TICKER_ITEMS = [
     "Linux",
     "Neovim",
     "Git",
-    "Pentesting",
-    "CTF",
-    "Web Recon",
-    "USB HID",
-    "Network Protocols",
-    "Microservices",
+    _("Pentesting"),
+    _("CTF"),
+    _("Web Recon"),
+    _("USB HID"),
+    _("Network Protocols"),
+    _("Microservices"),
     "Docker",
     "Redis",
     "FastAPI",
@@ -225,10 +225,10 @@ EXTRA_SKILLS = [
 ]
 
 LANGUAGES = [
-    {"flag": "🇧🇷", "name": "Portuguese", "level": "Native"},
-    {"flag": "🇺🇸", "name": "English", "level": "Fluent"},
-    {"flag": "🇭🇺", "name": "Hungarian", "level": "Conversational"},
-    {"flag": "🇪🇸", "name": "Spanish", "level": "Intermediate"},
+    {"flag": "🇧🇷", "name": _("Portuguese"), "level": _("Native")},
+    {"flag": "🇺🇸", "name": _("English"), "level": _("Fluent")},
+    {"flag": "🇭🇺", "name": _("Hungarian"), "level": _("Conversational")},
+    {"flag": "🇪🇸", "name": _("Spanish"), "level": _("Intermediate")},
 ]
 
 

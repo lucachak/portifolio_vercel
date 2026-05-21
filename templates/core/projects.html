@@ -17,7 +17,6 @@
         {% for project in projects %}
 
         {% if project.featured %}
-        <!-- Featured card -->
         <div class="project-card featured {{ project.accent }} fade-up">
             <div class="project-content">
                 <p class="project-num">{% trans "Featured" %} / 01</p>
@@ -38,34 +37,39 @@
                 </a>
                 {% endif %}
             </div>
-
-            {% if project.terminal_lines %}
             <div class="project-preview">
+                {% if project.image %}
+                <img src="{% static project.image %}" alt="{{ project.title }}" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9;">
+                {% elif project.terminal_lines is not None %}
                 <div class="preview-terminal">
                     <div class="terminal-bar">
-                        <div class="t-dot r"></div>
-                        <div class="t-dot y"></div>
-                        <div class="t-dot g"></div>
+                        <div class="t-dot r"></div><div class="t-dot y"></div><div class="t-dot g"></div>
+                        <span class="terminal-title">{{ project.title|lower|slugify }}.sh</span>
                     </div>
-                    {% for line in project.terminal_lines %}
-                    <div class="terminal-line">
-                        {% if line.type == 'comment' %}<span class="comment">{{ line.text }}</span>
-                        {% elif line.type == 'cmd' %}<span class="cmd">{{ line.text }}</span>{% if line.rest %}
-                        {{ line.rest }}{% endif %}
-                        {% elif line.type == 'out' %}<span class="out">{{ line.text }}</span>
-                        {% elif line.type == 'cursor' %}<span class="cmd">$</span> <span class="cursor-blink"></span>
-                        {% else %}&nbsp;{% endif %}
+                    <div class="terminal-body">
+                        {% for line in project.terminal_lines %}
+                        <div class="terminal-line">
+                            {% if line.type == 'comment' %}
+                            <span class="comment">{{ line.text }}</span>
+                            {% elif line.type == 'cmd' %}
+                            <span class="t-prompt">$</span> <span class="cmd">{{ line.text }}</span>
+                            {% elif line.type == 'out' %}
+                            <span class="out">&nbsp;&nbsp;{{ line.text }}</span>
+                            {% elif line.type == 'cursor' %}
+                            <span class="t-prompt">$</span> <span class="cursor-blink"></span>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                        {% if not project.terminal_lines %}
+                        <div class="terminal-line"><span class="t-prompt">$</span> <span class="cursor-blink"></span></div>
+                        {% endif %}
                     </div>
-                    {% endfor %}
                 </div>
+                {% endif %}
             </div>
-            {% endif %}
         </div>
-
         {% else %}
-        <!-- Regular card -->
         <div class="project-card {{ project.accent }} fade-up">
-            <p class="project-num">0{{ forloop.counter }}</p>
             <span class="project-icon">{{ project.icon }}</span>
             <h3 class="project-title">{{ project.title }}</h3>
             <p class="project-desc">{{ project.description }}</p>
@@ -87,7 +91,6 @@
 
         {% endfor %}
 
-        <!-- GitHub CTA -->
         <a href="https://github.com/lucachak" target="_blank" class="project-card accent6 fade-up"
             style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; min-height:300px;">
             <span style="font-size:48px; margin-bottom:20px; display:block;">⌥</span>
@@ -95,7 +98,7 @@
             <p class="project-desc" style="max-width:240px;">
                 {% trans "Explore all repositories, experiments, and works in progress." %}
             </p>
-            <span class="project-link" style="justify-content:center; margin-top:auto;">
+            <span class="project-link offensive-link" style="justify-content:center; margin-top:auto;">
                 github.com/lucachak <span class="project-arrow">↗</span>
             </span>
         </a>
@@ -108,7 +111,7 @@
 {% block extra_js %}
 <script>
     document.querySelectorAll('.projects-grid .project-card').forEach((card, i) => {
-        card.style.transitionDelay = (i * 0.08) + 's';
+        card.style.transitionDelay = `${i * 0.05}s`;
     });
 </script>
 {% endblock %}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-19 20:32+0000\n"
+"POT-Creation-Date: 2026-05-21 16:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: core/views.py:8
+msgid "FinGen"
+msgstr ""
 
 #: core/views.py:10
 msgid ""
@@ -30,6 +34,36 @@ msgid ""
 "landing page."
 msgstr ""
 
+#: core/views.py:32
+msgid "// AI financial advisor"
+msgstr "// Consultor financeiro de IA"
+
+#: core/views.py:33
+msgid "POST /api/chat/analyze"
+msgstr ""
+
+#: core/views.py:34
+msgid "→ Parsing statement..."
+msgstr ""
+
+#: core/views.py:35
+#, fuzzy
+#| msgid "→ Monthly burn: R$ 3,240"
+msgid "→ Monthly spend: R$ 3.240"
+msgstr "→ Gasto mensal: R$ 3.240"
+
+#: core/views.py:36
+msgid "→ Savings rate: 18.4%"
+msgstr "→ Taxa de poupança: 18,4%"
+
+#: core/views.py:37
+msgid "→ Recommendation ready ✓"
+msgstr "→ Recomendação pronta ✓"
+
+#: core/views.py:44
+msgid "Dirb-like — Web Directory Scanner"
+msgstr ""
+
 #: core/views.py:46
 msgid ""
 "A brute-force web directory scanner built entirely in pure Python — no "
@@ -39,6 +73,10 @@ msgid ""
 "hood before trusting them blindly. Concurrent scanning, configurable "
 "wordlists, and clean output formatting."
 msgstr ""
+
+#: core/views.py:67
+msgid "CV-Spammer — Automated Job Application Bot"
+msgstr "CV-Spammer — Bot de Candidatura Automatizada"
 
 #: core/views.py:69
 msgid ""
@@ -50,6 +88,10 @@ msgid ""
 "SMTP handling."
 msgstr ""
 
+#: core/views.py:83
+msgid "CambioMatic — ERP for Auto Shops"
+msgstr ""
+
 #: core/views.py:85
 msgid ""
 "Small auto repair shops run on paper, WhatsApp messages, and memory. "
@@ -58,6 +100,10 @@ msgid ""
 "place. Built for non-technical operators who need something that just works, "
 "without training or IT support. Currently live and in use."
 msgstr ""
+
+#: core/views.py:100
+msgid "Django SaaS Boilerplate"
+msgstr "Boilerplate SaaS em Django"
 
 #: core/views.py:102
 msgid ""
@@ -68,6 +114,10 @@ msgid ""
 "proper separation of concerns. Designed to be the foundation you actually "
 "want to build on."
 msgstr ""
+
+#: core/views.py:125
+msgid "Security Research & Offensive Tooling"
+msgstr "Pesquisa de Segurança e Ferramentas Ofensivas"
 
 #: core/views.py:127
 msgid ""
@@ -82,6 +132,10 @@ msgid ""
 "goal: understand how attacks work before trying to defend against them."
 msgstr ""
 
+#: core/views.py:153
+msgid "CourierIQ — Logistics Microservices"
+msgstr "CourierIQ — Microsserviços de Logística"
+
 #: core/views.py:155
 msgid ""
 "Real-time package tracking system designed for throughput. Microservices "
@@ -91,122 +145,301 @@ msgid ""
 "handling under concurrent load."
 msgstr ""
 
-#: templates/base.html:33 templates/core/about.html:11
-msgid "About"
+#: core/views.py:188
+msgid "Pentesting"
+msgstr ""
+
+#: core/views.py:189
+msgid "CTF"
+msgstr ""
+
+#: core/views.py:190
+msgid "Web Recon"
+msgstr ""
+
+#: core/views.py:191
+msgid "USB HID"
+msgstr ""
+
+#: core/views.py:192
+msgid "Network Protocols"
+msgstr ""
+
+#: core/views.py:193
+msgid "Microservices"
+msgstr ""
+
+#: core/views.py:228
+msgid "Portuguese"
+msgstr "Português"
+
+#: core/views.py:228
+msgid "Native"
+msgstr "Nativo"
+
+#: core/views.py:229
+msgid "English"
+msgstr "Inglês"
+
+#: core/views.py:229
+msgid "Fluent"
+msgstr "Fluente"
+
+#: core/views.py:230
+msgid "Hungarian"
+msgstr "Húngaro"
+
+#: core/views.py:230
+msgid "Conversational"
+msgstr ""
+
+#: core/views.py:231
+msgid "Spanish"
+msgstr "Espanhol"
+
+#: core/views.py:231
+msgid "Intermediate"
+msgstr "Intermediário"
+
+#: templates/base.html:6
+msgid "Lucas Lucachak — Dev & Security"
+msgstr ""
+
+#: templates/base.html:548
+#, fuzzy
+#| msgid "About"
+msgid "about"
 msgstr "Sobre"
 
-#: templates/base.html:36
-msgid "Projects"
+#: templates/base.html:549
+#, fuzzy
+#| msgid "Projects"
+msgid "projects"
 msgstr "Projetos"
 
-#: templates/base.html:38
-msgid "Contact"
+#: templates/base.html:550
+#, fuzzy
+#| msgid "Contact"
+msgid "contact"
 msgstr "Contato"
 
-#: templates/base.html:62
+#: templates/base.html:572
+msgid "open to work"
+msgstr ""
+
+#: templates/base.html:575
 msgid "Hire me"
 msgstr "Contrate-me"
 
-#: templates/base.html:77
-msgid "Built with purpose"
-msgstr "Feito com propósito"
-
-#: templates/base.html:78
-msgid "São Paulo, BR · Available for hire"
+#: templates/base.html:585
+#, fuzzy
+#| msgid "São Paulo, BR · Available for hire"
+msgid "São Paulo, BR · EU citizen · Available for hire"
 msgstr "São Paulo, BR · Disponível para contratação"
 
-#: templates/core/about.html:11
+#: templates/core/about.html:157
+msgid "About"
+msgstr "Sobre"
+
+#: templates/core/about.html:157
 msgid "me"
 msgstr "mim"
 
-#: templates/core/about.html:18
+#: templates/core/about.html:166
+msgid "builder"
+msgstr ""
+
+#: templates/core/about.html:167
+msgid "breaker"
+msgstr ""
+
+#: templates/core/about.html:168
+msgid "multicultural"
+msgstr ""
+
+#: templates/core/about.html:169
+msgid "4 languages"
+msgstr ""
+
+#: templates/core/about.html:173
 msgid ""
 "\n"
 "                I'm <strong>Lucas Lucachak</strong> — a software developer "
-"studying Computer Science\n"
-"                at the <strong>University of Debrecen, Hungary</strong> on a "
-"merit scholarship,\n"
-"                currently based in <strong>São Paulo, Brazil</strong>. I "
-"build full-stack web applications\n"
-"                and approach every system with the question a developer "
-"rarely asks:\n"
+"based in <strong>São Paulo, Brazil</strong>,\n"
+"                studying Computer Science at the <strong>University of "
+"Debrecen, Hungary</strong> on a merit scholarship.\n"
+"                I build full-stack web applications and approach every "
+"system with the question most developers skip:\n"
 "                <em>how could this be broken?</em>\n"
 "                "
 msgstr ""
 
-#: templates/core/about.html:27
+#: templates/core/about.html:182
 msgid ""
 "\n"
-"                On the building side, I've shipped production ERPs, AI-"
-"integrated financial tools,\n"
-"                and SaaS boilerplates — systems with real users, real data, "
-"and real uptime requirements.\n"
-"                On the breaking side, I completed formal coursework in\n"
-"                <strong>ethical hacking</strong> at university — covering "
-"network attacks,\n"
-"                vulnerability assessment, and social engineering — and kept "
-"going from there on my own.\n"
+"                On the building side: production ERPs, AI-integrated "
+"financial tools, SaaS boilerplates —\n"
+"                systems with real users, real data, <strong>real uptime "
+"requirements</strong>.\n"
+"                On the breaking side: I took formal coursework in "
+"<strong>ethical hacking</strong> at university,\n"
+"                then kept going on my own — CTF competitions, recon tooling, "
+"vulnerability research in controlled environments.\n"
 "                "
 msgstr ""
 
-#: templates/core/about.html:36
+#: templates/core/about.html:191
 msgid ""
 "\n"
-"                My self-directed security research includes: <strong>network-"
-"layer attack analysis</strong>\n"
-"                (studying how DoS/DDoS traffic patterns work at the protocol "
-"level),\n"
-"                <strong>Android security research</strong> (APK structure, "
-"static analysis, payload behavior\n"
-"                in sandboxed environments), <strong>physical access testing</"
-"strong> with a\n"
-"                Raspberry Pi Pico converted into a USB HID device, and "
-"building recon tooling from scratch —\n"
-"                including a DIRB-style scanner with a hand-written HTTP "
-"stack, zero external dependencies.\n"
-"                CTF competitions tie it all together in practice.\n"
-"                "
-msgstr ""
-
-#: templates/core/about.html:47
-msgid ""
-"\n"
-"                I also spent time maintaining <strong>electric bike systems</"
-"strong> — modifying lithium\n"
-"                battery packs, managing voltage curves, servicing motors by "
-"hand. Same lesson every time:\n"
-"                abstractions hide complexity, and <em>understanding what's "
+"                I've also spent time inside electric bike systems — "
+"<strong>modifying lithium battery packs</strong>,\n"
+"                managing voltage curves, servicing motors by hand. Same "
+"lesson every time:\n"
+"                <em>abstractions hide complexity, and understanding what's "
 "underneath is always worth it.</em>\n"
 "                "
 msgstr ""
 
-#: templates/core/about.html:54
+#: templates/core/about.html:199
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                I'm looking for internship and junior developer "
+#| "opportunities —\n"
+#| "                remote or in São Paulo. I work fast, communicate "
+#| "clearly,\n"
+#| "                and bring genuine curiosity to whatever I build.\n"
+#| "                "
 msgid ""
 "\n"
-"                I write in four languages, have lived in two countries, and "
-"bring both\n"
-"                a builder's instinct and an attacker's mindset to whatever I "
-"work on.\n"
+"                Hungarian citizen. Lived in Ireland. Fluent in four "
+"languages.\n"
+"                I bring both a <strong>builder's instinct</strong> and an "
+"<strong>attacker's mindset</strong> to every project.\n"
 "                "
 msgstr ""
+"\n"
+"                Estou procurando oportunidades de estágio e desenvolvedor "
+"júnior —\n"
+"                remoto ou em São Paulo. Eu trabalho rápido, me comunico "
+"claramente\n"
+"                e trago curiosidade genuína para tudo o que construo.\n"
+"                "
 
-#: templates/core/about.html:60 templates/core/index.html:32
+#: templates/core/about.html:208
+msgid "Self-directed security research"
+msgstr ""
+
+#: templates/core/about.html:214
+msgid "Web Recon Tooling"
+msgstr ""
+
+#: templates/core/about.html:215
+msgid ""
+"OSINT/dorking suite (async, 4-engine fallback) + DIRB-style scanner written "
+"from raw sockets — zero dependencies."
+msgstr ""
+
+#: templates/core/about.html:221
+msgid "Android Security Research"
+msgstr ""
+
+#: templates/core/about.html:222
+msgid ""
+"APK structure analysis, static analysis, payload behavior in sandboxed VMs."
+msgstr ""
+
+#: templates/core/about.html:228
+msgid "Physical Access — USB HID"
+msgstr ""
+
+#: templates/core/about.html:229
+msgid ""
+"Raspberry Pi Pico flashed as a USB HID device. Rubber Ducky-style keystroke "
+"injection in lab environments."
+msgstr ""
+
+#: templates/core/about.html:235
+msgid "Network Attack Analysis"
+msgstr ""
+
+#: templates/core/about.html:236
+msgid ""
+"DoS/DDoS traffic patterns at the protocol level. Studied in isolated lab "
+"setups, coursework + self-directed."
+msgstr ""
+
+#: templates/core/about.html:242
+msgid "CTF Competitions"
+msgstr ""
+
+#: templates/core/about.html:243
+msgid ""
+"Web exploitation, recon, enumeration. Where everything above gets tested "
+"under real pressure."
+msgstr ""
+
+#: templates/core/about.html:250
 msgid "Download Resume"
 msgstr "Baixar Currículo"
 
-#: templates/core/about.html:67
+#: templates/core/about.html:258
 msgid "Core stack"
 msgstr "Stack principal"
 
-#: templates/core/about.html:76
+#: templates/core/about.html:267
 msgid "Security & low-level"
 msgstr "Segurança e baixo nível"
 
-#: templates/core/about.html:91
+#: templates/core/about.html:269
+msgid "OSINT / Google Dorking"
+msgstr ""
+
+#: templates/core/about.html:270
+msgid "Web exploitation"
+msgstr ""
+
+#: templates/core/about.html:271
+msgid "CTF competitions"
+msgstr ""
+
+#: templates/core/about.html:272
+msgid "Network attack analysis"
+msgstr ""
+
+#: templates/core/about.html:273
+msgid "Android security research"
+msgstr ""
+
+#: templates/core/about.html:274
+msgid "USB HID / BadUSB"
+msgstr ""
+
+#: templates/core/about.html:275
+msgid "Web recon tooling"
+msgstr ""
+
+#: templates/core/about.html:276
+msgid "Raw sockets / HTTP stack"
+msgstr ""
+
+#: templates/core/about.html:277
+msgid "Linux internals"
+msgstr ""
+
+#: templates/core/about.html:278
+msgid "VMs & sandboxing"
+msgstr ""
+
+#: templates/core/about.html:279
+msgid "Ethical Hacking (coursework)"
+msgstr ""
+
+#: templates/core/about.html:284
 msgid "Also worked with"
 msgstr "Também trabalhei com"
 
-#: templates/core/about.html:100 templates/core/index.html:52
+#: templates/core/about.html:293 templates/core/index.html:226
 msgid "Languages spoken"
 msgstr "Idiomas falados"
 
@@ -305,72 +538,65 @@ msgstr "Ciência da Computação · Universidade de Debrecen"
 msgid "Hungary · Merit scholarship · Currently enrolled"
 msgstr "Debrecen, Hungria · Bolsista · Atualmente matriculado"
 
-#: templates/core/index.html:13
+#: templates/core/index.html:4
+msgid "Lucas Lucachak — Dev & Security Researcher"
+msgstr ""
+
+#: templates/core/index.html:163
 msgid "Available for new roles"
 msgstr "Disponível para novas oportunidades"
 
-#: templates/core/index.html:21
+#: templates/core/index.html:171
+msgid "Full-Stack Dev"
+msgstr ""
+
+#: templates/core/index.html:172
 #, fuzzy
-#| msgid ""
-#| "\n"
-#| "            Software developer based in <strong>São Paulo, BR</strong> —\n"
-#| "            building full-stack web applications with <strong>Python</"
-#| "strong>,\n"
-#| "            <strong>Java</strong>, and a passion for writing clean,\n"
-#| "            purposeful code. <em>Bilingual. Multicultural. Obsessive "
-#| "about craft.</em>\n"
-#| "            "
+#| msgid "Security Research & Offensive Tooling"
+msgid "Security Research"
+msgstr "Pesquisa de Segurança e Ferramentas Ofensivas"
+
+#: templates/core/index.html:174
+msgid "São Paulo"
+msgstr ""
+
+#: templates/core/index.html:175
+msgid "EU Citizen"
+msgstr ""
+
+#: templates/core/index.html:179
 msgid ""
 "\n"
-"            Full-stack developer based in <strong>São Paulo, BR</strong> —\n"
-"            building production-grade web applications with <strong>Python</"
-"strong> and\n"
-"            <strong>Java</strong>, with a sharp eye for how systems\n"
-"            <em>break</em> — and how to make them not.\n"
+"            I build <strong>production-grade web systems</strong> and break "
+"them for fun.\n"
+"            Full-stack developer with an attacker's mindset — from\n"
+"            <em>microservices architecture</em> and ERPs to writing\n"
+"            <strong>OSINT tools, web scanners, and USB HID payloads</strong> "
+"from scratch.\n"
+"            Four languages. Two countries lived. One passport to work "
+"anywhere in the EU.\n"
 "            "
 msgstr ""
-"\n"
-"            Desenvolvedor de software baseado em <strong>São Paulo, BR</"
-"strong> —\n"
-"            construindo aplicações web full-stack com <strong>Python</"
-"strong>,\n"
-"            <strong>Java</strong> e paixão por escrever código limpo e com "
-"propósito.\n"
-"            <em>Bilíngue. Multicultural. Obsessivo por técnica.</em>\n"
-"            "
 
-#: templates/core/index.html:30
+#: templates/core/index.html:189
 msgid "View my work"
 msgstr "Ver meu trabalho"
 
-#: templates/core/index.html:38
-msgid "Current status"
-msgstr "Status atual"
-
-#: templates/core/index.html:40
-#, fuzzy
-#| msgid "Actively seeking software internship or junior developer role"
-msgid "Actively seeking junior developer or security-adjacent roles"
+#: templates/core/index.html:191
+msgid "Resume"
 msgstr ""
-"Buscando ativamente estágio em software ou cargo de desenvolvedor júnior"
 
-#: templates/core/index.html:41
-#, fuzzy
-#| msgid "Remote-friendly · São Paulo · Open to relocation"
-msgid "Remote-friendly · Europe · Open to relocation"
-msgstr "Remoto · São Paulo · Cidadão europeu · Aberto a realocação"
-
-#: templates/core/index.html:48
+#: templates/core/index.html:222
 msgid "Years coding"
 msgstr "Anos programando"
 
-#: templates/core/index.html:56
+#: templates/core/index.html:230
 #, fuzzy
 #| msgid "Projects"
 msgid "Projects shipped"
 msgstr "Projetos entregues"
 
-#: templates/core/index.html:60
+#: templates/core/index.html:234
 msgid "Countries lived"
 msgstr "Países vividos"
 
@@ -382,23 +608,23 @@ msgstr "Selecionados"
 msgid "work"
 msgstr "trabalhos"
 
-#: templates/core/projects.html:23
+#: templates/core/projects.html:22
 msgid "Featured"
 msgstr "Destaque"
 
-#: templates/core/projects.html:33 templates/core/projects.html:78
+#: templates/core/projects.html:32 templates/core/projects.html:82
 msgid "View on GitHub"
 msgstr "Ver no GitHub"
 
-#: templates/core/projects.html:37 templates/core/projects.html:82
+#: templates/core/projects.html:36 templates/core/projects.html:86
 msgid "Live demo"
 msgstr "Demo ao vivo"
 
-#: templates/core/projects.html:94
+#: templates/core/projects.html:97
 msgid "More on GitHub"
 msgstr "Mais no GitHub"
 
-#: templates/core/projects.html:96
+#: templates/core/projects.html:99
 msgid "Explore all repositories, experiments, and works in progress."
 msgstr "Explore todos os repositórios, experimentos e trabalhos em andamento."
 
@@ -1647,26 +1873,53 @@ msgstr ""
 msgid "Connect, get help, or contribute"
 msgstr ""
 
-#~ msgid "Portuguese"
-#~ msgstr "Português"
+#~ msgid "Built with purpose"
+#~ msgstr "Feito com propósito"
 
-#~ msgid "Native"
-#~ msgstr "Nativo"
+#, fuzzy
+#~| msgid ""
+#~| "\n"
+#~| "            Software developer based in <strong>São Paulo, BR</strong> "
+#~| "—\n"
+#~| "            building full-stack web applications with <strong>Python</"
+#~| "strong>,\n"
+#~| "            <strong>Java</strong>, and a passion for writing clean,\n"
+#~| "            purposeful code. <em>Bilingual. Multicultural. Obsessive "
+#~| "about craft.</em>\n"
+#~| "            "
+#~ msgid ""
+#~ "\n"
+#~ "            Full-stack developer based in <strong>São Paulo, BR</strong> "
+#~ "—\n"
+#~ "            building production-grade web applications with "
+#~ "<strong>Python</strong> and\n"
+#~ "            <strong>Java</strong>, with a sharp eye for how systems\n"
+#~ "            <em>break</em> — and how to make them not.\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "            Desenvolvedor de software baseado em <strong>São Paulo, BR</"
+#~ "strong> —\n"
+#~ "            construindo aplicações web full-stack com <strong>Python</"
+#~ "strong>,\n"
+#~ "            <strong>Java</strong> e paixão por escrever código limpo e "
+#~ "com propósito.\n"
+#~ "            <em>Bilíngue. Multicultural. Obsessivo por técnica.</em>\n"
+#~ "            "
 
-#~ msgid "English"
-#~ msgstr "Inglês"
+#~ msgid "Current status"
+#~ msgstr "Status atual"
 
-#~ msgid "Fluent"
-#~ msgstr "Fluente"
+#, fuzzy
+#~| msgid "Actively seeking software internship or junior developer role"
+#~ msgid "Actively seeking junior developer or security-adjacent roles"
+#~ msgstr ""
+#~ "Buscando ativamente estágio em software ou cargo de desenvolvedor júnior"
 
-#~ msgid "Hungarian"
-#~ msgstr "Húngaro"
-
-#~ msgid "Intermediate"
-#~ msgstr "Intermediário"
-
-#~ msgid "Spanish"
-#~ msgstr "Espanhol"
+#, fuzzy
+#~| msgid "Remote-friendly · São Paulo · Open to relocation"
+#~ msgid "Remote-friendly · Europe · Open to relocation"
+#~ msgstr "Remoto · São Paulo · Cidadão europeu · Aberto a realocação"
 
 #~ msgid ""
 #~ "Personal and household finance management web app powered by AI. Connects "
@@ -1684,20 +1937,8 @@ msgstr ""
 #~ "frontend Thymeleaf com uma visualização de moeda em Three.js animada na "
 #~ "página inicial."
 
-#~ msgid "// AI financial advisor"
-#~ msgstr "// Consultor financeiro de IA"
-
 #~ msgid "→ Analyzing your finances..."
 #~ msgstr "→ Analisando suas finanças..."
-
-#~ msgid "→ Monthly burn: R$ 3,240"
-#~ msgstr "→ Gasto mensal: R$ 3.240"
-
-#~ msgid "→ Savings rate: 18.4%"
-#~ msgstr "→ Taxa de poupança: 18,4%"
-
-#~ msgid "→ Recommendation ready ✓"
-#~ msgstr "→ Recomendação pronta ✓"
 
 #~ msgid ""
 #~ "Full-featured SaaS boilerplate with subscription billing via Stripe, "
@@ -1841,15 +2082,3 @@ msgstr ""
 
 #~ msgid "Actively seeking new opportunities in the software industry"
 #~ msgstr "Buscando vagas de dev júnior ou funções adjacentes à segurança"
-
-#~ msgid "Security Research & Offensive Tooling"
-#~ msgstr "Pesquisa de Segurança e Ferramentas Ofensivas"
-
-#~ msgid "CV-Spammer — Automated Job Application Bot"
-#~ msgstr "CV-Spammer — Bot de Candidatura Automatizada"
-
-#~ msgid "CourierIQ — Logistics Microservices"
-#~ msgstr "CourierIQ — Microsserviços de Logística"
-
-#~ msgid "Django SaaS Boilerplate"
-#~ msgstr "Boilerplate SaaS em Django"

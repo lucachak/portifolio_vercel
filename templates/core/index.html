@@ -1,65 +1,240 @@
 {% extends "base.html" %}
 {% load static i18n %}
 
-{% block title %}Lucas Lucachak — Software Developer{% endblock %}
+{% block title %}{% trans "Lucas Lucachak — Dev & Security Researcher" %}{% endblock %}
+
+{% block extra_css %}
+<style>
+/* ─── HERO ─── */
+#hero {
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: calc(100vh - 50px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.hero-left { display: flex; flex-direction: column; gap: 1.6rem; }
+
+.hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid rgba(0,230,118,.25);
+    background: var(--adim);
+    padding: 4px 12px;
+    border-radius: 2px;
+    width: fit-content;
+}
+
+.hero-tag::before { content: ''; display:block; width:6px; height:6px; border-radius:50%; background:var(--accent); animation: pulse 2s infinite; }
+
+.hero-name {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 700;
+    letter-spacing: -.04em;
+    line-height: .95;
+}
+
+.hero-name .line2 { color: var(--accent); }
+
+.hero-role {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+
+.role-tag {
+    font-size: 11px;
+    color: var(--sub);
+    background: var(--bg3);
+    border: 1px solid var(--border2);
+    padding: 3px 10px;
+    border-radius: 2px;
+    letter-spacing: .06em;
+}
+
+.role-tag.accent { background: var(--adim); border-color: rgba(0,230,118,.2); color: var(--accent); }
+.role-tag.red { background: rgba(255,68,68,.07); border-color: rgba(255,68,68,.2); color: var(--red); }
+
+.hero-bio {
+    font-family: var(--sans);
+    font-size: .95rem;
+    color: #999;
+    line-height: 1.75;
+    font-weight: 300;
+    max-width: 440px;
+}
+
+.hero-bio strong { color: var(--text); font-weight: 500; }
+.hero-bio em { font-style: italic; color: var(--accent); }
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+
+/* ─── HERO RIGHT ─── */
+.hero-right { display: flex; flex-direction: column; gap: 1rem; }
+
+.hero-terminal { /* inherits .terminal */ }
+
+.hero-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.stat-box {
+    background: var(--bg);
+    padding: 1.2rem 1.4rem;
+    transition: background .2s;
+}
+
+.stat-box:hover { background: var(--bg2); }
+
+.stat-num {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -.03em;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: .3rem;
+}
+
+.stat-num span { color: var(--accent); font-size: 1rem; }
+.stat-label { font-size: 11px; color: var(--muted); letter-spacing: .06em; }
+
+/* ─── ATTACK SURFACE CARD ─── */
+.attack-card {
+    border: 1px solid rgba(255,68,68,.15);
+    background: rgba(255,68,68,.03);
+    border-radius: 4px;
+    padding: 1.2rem 1.4rem;
+}
+
+.attack-card-title {
+    font-size: 10px;
+    color: var(--red);
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    margin-bottom: .8rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.attack-card-title::before { content: '⚠'; font-size: 11px; }
+
+.attack-list { display: flex; flex-direction: column; gap: .4rem; }
+
+.attack-item {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    font-size: 12px;
+    color: var(--sub);
+}
+
+.attack-item::before { content: '›'; color: var(--red); font-size: 14px; flex-shrink:0; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+    #hero { grid-template-columns: 1fr; gap: 3rem; min-height: auto; padding-top: 3rem; }
+    .hero-bio { max-width: 100%; }
+}
+</style>
+{% endblock %}
 
 {% block content %}
 
-<!-- HERO -->
 <section id="hero">
-    <div class="hero-grid-bg"></div>
-
     <div class="hero-left">
-        <p class="hero-tag">{% trans "Available for new roles" %}</p>
+        <p class="hero-tag fade-up">{% trans "Available for new roles" %}</p>
 
-        <h1 class="hero-name">
+        <h1 class="hero-name fade-up">
             <span class="line1">Lucas</span>
             <span class="line2">Lucachak</span>
         </h1>
 
-        <p class="hero-subtitle">
+        <div class="hero-role fade-up">
+            <span class="role-tag accent">{% trans "Full-Stack Dev" %}</span>
+            <span class="role-tag red">{% trans "Security Research" %}</span>
+            <span class="role-tag">Java · Python · C#</span>
+            <span class="role-tag">🇧🇷 {% trans "São Paulo" %}</span>
+            <span class="role-tag">🇭🇺 {% trans "EU Citizen" %}</span>
+        </div>
+
+        <p class="hero-bio fade-up">
             {% blocktrans %}
-            Full-stack developer based in <strong>São Paulo, BR</strong> —
-            building production-grade web applications with <strong>Python</strong> and
-            <strong>Java</strong>, with a sharp eye for how systems
-            <em>break</em> — and how to make them not.
+            I build <strong>production-grade web systems</strong> and break them for fun.
+            Full-stack developer with an attacker's mindset — from
+            <em>microservices architecture</em> and ERPs to writing
+            <strong>OSINT tools, web scanners, and USB HID payloads</strong> from scratch.
+            Four languages. Two countries lived. One passport to work anywhere in the EU.
             {% endblocktrans %}
         </p>
 
-        <div class="hero-actions">
+        <div class="hero-actions fade-up">
             <a href="{% url 'projects' %}" class="btn-primary">{% trans "View my work" %} ↓</a>
             <a href="https://github.com/lucachak" target="_blank" class="btn-outline">GitHub ↗</a>
-            <a href="{% static 'Lucas_Lucachak_Resume.pdf' %}" download class="btn-outline">{% trans "Download Resume" %} ↓</a>
+            <a href="{% static 'Lucas_Lucachak_Resume.pdf' %}" download class="btn-outline">{% trans "Resume" %} ↓</a>
         </div>
     </div>
 
-    <div class="hero-right">
-        <div class="hero-status-card">
-            <p class="status-label"><span class="status-dot"></span>{% trans "Current status" %}</p>
-            <p class="status-text">
-                {% trans "Actively seeking junior developer or security-adjacent roles" %}
-                <small>{% trans "Remote-friendly · Europe · Open to relocation" %}</small>
-            </p>
+    <div class="hero-right fade-up">
+
+        <!-- LIVE TERMINAL -->
+        <div class="terminal hero-terminal">
+            <div class="terminal-bar">
+                <div class="td r"></div><div class="td y"></div><div class="td g"></div>
+                <span class="terminal-title">lucas@dev:~ — recon.sh</span>
+            </div>
+            <div class="terminal-body">
+                <div><span class="t-prompt">$</span> <span class="t-cmd">python osinpy.py auto findFiles pdfs</span></div>
+                <div><span class="t-out">&nbsp;&nbsp;[*] Engine: nodriver (headless Chromium)</span></div>
+                <div><span class="t-ok">&nbsp;&nbsp;[+] 3 exposed assets found</span></div>
+                <div><span class="t-warn">&nbsp;&nbsp;[!] /backup/employees.xlsx — public</span></div>
+                <div>&nbsp;</div>
+                <div><span class="t-prompt">$</span> <span class="t-cmd">python dirpy.py -u https://target.com -t 20</span></div>
+                <div><span class="t-ok">&nbsp;&nbsp;[200] /admin</span></div>
+                <div><span class="t-ok">&nbsp;&nbsp;[200] /api/v1</span></div>
+                <div><span class="t-out">&nbsp;&nbsp;[403] /.env</span></div>
+                <div>&nbsp;</div>
+                <div><span class="t-prompt">$</span> <span class="t-cursor"></span></div>
+            </div>
         </div>
 
-        <div class="hero-stats">
-            <div class="stat-item">
+        <!-- STATS -->
+        <div class="hero-stats-grid">
+            <div class="stat-box">
                 <div class="stat-num">3<span>+</span></div>
                 <div class="stat-label">{% trans "Years coding" %}</div>
             </div>
-            <div class="stat-item">
+            <div class="stat-box">
                 <div class="stat-num">4</div>
                 <div class="stat-label">{% trans "Languages spoken" %}</div>
             </div>
-            <div class="stat-item">
+            <div class="stat-box">
                 <div class="stat-num">6<span>+</span></div>
                 <div class="stat-label">{% trans "Projects shipped" %}</div>
             </div>
-            <div class="stat-item">
+            <div class="stat-box">
                 <div class="stat-num">2</div>
                 <div class="stat-label">{% trans "Countries lived" %}</div>
             </div>
         </div>
+
     </div>
 </section>
 
@@ -69,7 +244,6 @@
         {% for tech in ticker_items %}
         <span class="ticker-item"><span class="dot">✦</span>{{ tech }}</span>
         {% endfor %}
-        {# Duplicate for seamless loop #}
         {% for tech in ticker_items %}
         <span class="ticker-item"><span class="dot">✦</span>{{ tech }}</span>
         {% endfor %}
